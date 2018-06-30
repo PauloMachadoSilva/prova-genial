@@ -8,7 +8,7 @@
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
           $('html, body').animate({
-            scrollTop: (target.offset().top - 54)
+            scrollTop: (target.offset().top - 100)
           }, 1000, "easeInOutExpo");
           return false;
         }
@@ -23,7 +23,7 @@
     // Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
       target: '#mainNav',
-      offset: 56
+      offset: 100
     });
   
     // Collapse Navbar
@@ -48,6 +48,56 @@
     $('.portfolio-modal').on('hidden.bs.modal', function(e) {
       $(".navbar").removeClass("d-none");
     })
+
+    $('.region-id.sp').click(function() {
+      $('.region-id.sp').addClass('active');     
+      $('.region-id.rj').removeClass('active'); 
+      $('.region-id.rs').removeClass('active'); 
+      $('.region-id.ouv').removeClass('active');       
+
+      $('.region-unit.sp').addClass('active');      
+      $('.region-unit.rj').removeClass('active');
+      $('.region-unit.rs').removeClass('active');
+      $('.region-unit.ouv').removeClass('active');
+      
+    });
+
+    $('.region-id.rj').click(function() {
+      $('.region-id.rj').addClass('active');   
+      $('.region-id.sp').removeClass('active'); 
+      $('.region-id.rs').removeClass('active'); 
+      $('.region-id.ouv').removeClass('active'); 
+      
+      $('.region-unit.rj').addClass('active');      
+      $('.region-unit.sp').removeClass('active');
+      $('.region-unit.rs').removeClass('active');
+      $('.region-unit.ouv').removeClass('active');
+      
+    });
+
+    $('.region-id.rs').click(function() {
+      $('.region-id.rs').addClass('active');     
+      $('.region-id.sp').removeClass('active'); 
+      $('.region-id.rj').removeClass('active'); 
+      $('.region-id.ouv').removeClass('active');       
+
+      $('.region-unit.rs').addClass('active');      
+      $('.region-unit.sp').removeClass('active');
+      $('.region-unit.rj').removeClass('active');
+      $('.region-unit.ouv').removeClass('active');
+    });
+
+    $('.region-id.ouv').click(function() {
+      $('.region-id.ouv').addClass('active');     
+      $('.region-id.sp').removeClass('active'); 
+      $('.region-id.rj').removeClass('active'); 
+      $('.region-id.rs').removeClass('active');       
+
+      $('.region-unit.ouv').addClass('active');      
+      $('.region-unit.sp').removeClass('active');
+      $('.region-unit.rj').removeClass('active');
+      $('.region-unit.rs').removeClass('active');
+    });
   
   })(jQuery); // End of use strict
   

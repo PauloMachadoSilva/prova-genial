@@ -1,3 +1,5 @@
+import { PartialDisclaimer } from './../components/partial-disclaimer/partial-disclaimer.component';
+import { PartialContact } from './../components/partial-contact/partial-contact.component';
 import { PlanoService } from './../services/planos/plano.service';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
@@ -8,6 +10,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from "@angular/forms";
 import { TextMaskModule } from 'angular2-text-mask';
+import { PartialSvc } from '../components/partial-svc/partial-svc.component';
 
 
 
@@ -16,8 +19,9 @@ import { TextMaskModule } from 'angular2-text-mask';
   declarations: [
     AppComponent,
     PageHome,
-
-    
+    PartialSvc,
+    PartialContact,
+    PartialDisclaimer
   ],
   imports: [
     BrowserModule,

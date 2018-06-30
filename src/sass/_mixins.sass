@@ -53,3 +53,27 @@
     &:hover
         border-color: #E953AB !important
         color: #E953AB !important
+
+@mixin mq-screen-mb()
+    width: 100%
+    margin: 0 auto
+    position: relative
+@mixin mq-svc-content-grid-img($link)
+    background-image: url($link)
+    background-position: center
+    background-size: cover
+    width: 48%
+    height: 252px
+    margin: 0 auto
+    position: relative
+    display: inline-block
+    .footer-title
+        color: $color-wh
+        position: absolute
+        bottom: 0
+        text-align: center
+        left: 0%
+        background-color: rgba(92, 88, 88, 0.55)
+        width: 100%
+        p
+            line-height: 50px

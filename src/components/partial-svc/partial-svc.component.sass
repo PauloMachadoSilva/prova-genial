@@ -1,0 +1,44 @@
+@import '../../sass/_variables'
+@import '../../sass/_mixins'
+
+.svc-content
+    background-color: #5C5858 
+    height: auto
+    h1
+        color: $color-wh
+        margin: 50px auto
+        position: relative
+        display: inline-block
+        text-align: center
+        width: 100%
+        font-family: Arial, Helvetica, sans-serif
+        font-weight: 100
+        font-size: 50px
+    .svc-content-grid
+        width: 90%
+        position: relative
+        margin: 0 auto
+        padding: 30px 0 0 0
+        text-align: center
+        .svc-content-grid-img-pregao
+            @include mq-svc-content-grid-img('/assets/imgs/svc/services_pregao.png')
+        .svc-content-grid-img-plataformas
+            @include mq-svc-content-grid-img('/assets/imgs/svc/services_plataformas.png')
+        .svc-content-grid-img-mercado
+            @include mq-svc-content-grid-img('/assets/imgs/svc/services_mercado.png')
+        .svc-content-grid-img-carteira
+            @include mq-svc-content-grid-img('/assets/imgs/svc/services_carteira.png')
+//SmartPhones
+@media #{$mq-mobile-min} and #{$mq-mobile-max}
+    .svc-content-grid  
+        width: 100% !important
+        .svc-content-grid-img-pregao
+            width: 100% !important
+        .svc-content-grid-img-plataformas
+            width: 100% !important
+        .svc-content-grid-img-mercado
+            width: 100% !important
+        .svc-content-grid-img-carteira
+            width: 100% !important
+//Tablets
+@media #{$mq-tablet-min} and #{$mq-tablet-max}    

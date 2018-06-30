@@ -12,7 +12,7 @@
     background-position: center
 .who
     background-color: #EEEEEE
-    height: 640px
+    height: auto
     .who-content
     .up
         position: absolute
@@ -52,5 +52,38 @@
             font-weight: 100
             color: #6B6D70  
 .services
-    height: 680px
+    height: auto
     color: #3168B8
+    .services-content
+        .up
+            position: absolute
+            margin: 10px auto
+            right: 200px
+            cursor: pointer
+            color: #cccccc
+.contact
+    height: auto
+    color: #3168B8
+    .contact-content
+        .up
+            position: absolute
+            margin: 10px auto
+            right: 200px
+            cursor: pointer
+            color: #cccccc
+
+//SmartPhones
+@media #{$mq-mobile-min} and #{$mq-mobile-max}    
+    .who-content
+         h1
+            font-size: 40px !important
+    .cols-who
+        width: 100% !important
+        padding: 0px !important
+        .cols-who-text
+            padding: 30px
+//Tablets
+@media #{$mq-tablet-min} and #{$mq-tablet-max}    
+    .cols-who
+        width: 48% !important
+        padding: 0px !important

@@ -14,6 +14,22 @@
 - Rodar o comando # Npm i para instalar as dependências;
 - Rodar o comando # ng serve --open para servir o navegador com o projeto.
 
+#ITENS CONTEMPLADOS NO TESTE
+
+##FRONT##
+- Menu Reponsivo
+- Efeito paralax que navega entre as seções
+- Seções Resposivas
+- Formulario de contato reativo(ReactForm)
+- Container de filiais funcionando com JQuery
+- Botão de voltar ao Topo
+
+##BACK##
+- API NodeJs (link)
+    - API esta no meu repósitorio e pode ser clonado, pois utilizei ele como camada de serviço
+    - Método que acessa o banco de dados e retorna um JSon
+    - A API esta exposta na UBLER e esta sendo consumida pelo projeto
+
 # MEUS DADOS
 
 - Paulo Eduardo - pauloems@yahoo.com.br - (21) 98438-4352

@@ -1,0 +1,55 @@
+@mixin title()
+    display: inline-block
+    margin: 20px 20px 20px 20px
+    font-size: 20px
+@mixin btn($color)
+    color: #fff
+    background-color: $color
+    border-color: $color
+    display: inline-block
+    font-weight: 100
+    text-align: center
+    white-space: nowrap
+    vertical-align: middle
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    border: 1px solid transparent
+    padding: .375rem 1.75rem
+    font-size: 0.8rem
+    line-height: 1.5
+    border-radius: .10rem
+    transition: color .15s
+    height: 38px
+    cursor: pointer
+    &:hover
+        background-color: #70B1D9 !important
+
+@mixin btn-conta($color)
+    color: $color
+    background-color: transparent
+    border-color: $color
+    display: inline-block
+    font-weight: 100
+    text-align: center
+    white-space: nowrap
+    vertical-align: middle
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    border: 1px solid transparent
+    padding: .375rem .75rem
+    font-size: 0.8rem
+    line-height: 1.5
+    border-radius: .10rem
+    -webkit-transition: color .15s
+    transition: color .15s
+    border: 2px solid $color
+    height: 38px
+    margin-left: 10px
+    cursor: pointer
+    &:hover
+        border-color: #E953AB !important
+        color: #E953AB !important

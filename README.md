@@ -6,6 +6,7 @@
             - Utilizei formulário reativo, com mascaras e validações especificas  
         - SASS: Segregação de folhas de estilo em SASS
         - MODELS: Interfaces (Plataformas e Planos)   
+        - COMPONENTS: Partials que poderam ser reaproveitadas no projeto
         - SERVICES: Camada de serviços, acesso aos endPoints                
 - Observações : Toda parte visual do projeto foi feita em SASS(css), poderia ter utilizado outros frameworks de front, mais optei em fazer tudo manualmente.
 
@@ -20,7 +21,7 @@
 - Menu Reponsivo
 - Efeito paralax que navega entre as seções
 - Seções Resposivas
-- Formulario de contato reativo(ReactForm)
+- Formulario de contato reativo(ReactForm) - Escreve o objeto no consoleLog
 - Container de filiais funcionando com JQuery
 - Botão de voltar ao Topo
 

@@ -1,3 +1,4 @@
+import { PartialFooter } from './../components/partial-footer/partial-footer.component';
 import { PartialDisclaimer } from './../components/partial-disclaimer/partial-disclaimer.component';
 import { PartialContact } from './../components/partial-contact/partial-contact.component';
 import { PlanoService } from './../services/planos/plano.service';
@@ -21,7 +22,8 @@ import { PartialSvc } from '../components/partial-svc/partial-svc.component';
     PageHome,
     PartialSvc,
     PartialContact,
-    PartialDisclaimer
+    PartialDisclaimer,
+    PartialFooter
   ],
   imports: [
     BrowserModule,

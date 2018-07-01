@@ -3,7 +3,7 @@
 
 .contact-content
     background-color: #FFFFFF 
-    height: 810px
+    height: auto
     margin: 0 auto;
     position: relative
     width: 100%
@@ -34,11 +34,36 @@
     .contact-form-field
         width: 100%
         line-height: 50px
+        ::placeholder
+            position: relative
+            padding-left: 0px
+        input[type=text] 
+            position: relative
+            padding-left: 3px
+        input.ng-invalid.ng-touched 
+            border: 1px solid red
+        .valid-form
+            line-height: 12px
+            .div-form
+                color: rgb(188, 0, 0)
+                font-weight: bold
+                font-size: 12px
+                z-index: 9999999
+                position: relative
+                height: 0px
+                text-align: left
+                text-indent: 70px
+                bottom: 12px
+                display: inline
+        button:disabled 
+            background-color: #0077d95b !important
+            cursor:no-drop !important
         .nome
             width: 99%
             height: 30px
             border-radius: 5px
             border: 1px solid #ccc
+            
         .email
             width: 44%
             height: 30px
@@ -128,7 +153,7 @@
                 line-height: 20px
                 color: $color-font-light-gray
     h2
-        font: size 21px
+        font-size: 21px
         color: #cccccc
         font-weight: 100
         font-family: Arial, Helvetica, sans-serif 
@@ -159,7 +184,8 @@
             width: 90%;
             background-color: #fbfbfb;
             padding: 25px 
-//Tablets
+
+    //Tablets
 @media #{$mq-tablet-min} and #{$mq-tablet-max}   
     .contact-content
         height: auto

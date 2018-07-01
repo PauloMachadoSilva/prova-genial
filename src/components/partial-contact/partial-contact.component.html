@@ -2,22 +2,45 @@
         <h1>CONTATO</h1>        
     <div class="contact-form">
         <div class="contact-form-field">
-            <h2>Envie-nos uma mensagem.</h2>
-            <input type="text" class="nome"
-            placeholder="Nome">
-            <input type="text" class="email"
-            placeholder="E-mail">
-            <input type="text" class="ddd"
-            placeholder="DDD">
-            <input type="text" class="telefone"
-            placeholder="Telefone">  
-            <select name="" id="" class="duvidas">
-                <option value="0">Estou com dúvidas</option>
-                <option value="1">Fundos de Investimento</option>    
-                <option value="2">Renda Fixa</option>            
-            </select>      
-            <textarea name="" id="" cols="30" rows="19" class="text-duvidas"></textarea>
-            <button class="enviar">ENVIAR</button>
+            <form [formGroup]="formulario"> 
+                <h2>Envie-nos uma mensagem.</h2> 
+                <div class="valid-form">            
+                    <span *ngIf="!formulario.get('nome').valid && formulario.get('nome').touched" class="div-form">Informe um nome válido</span>
+                    <span *ngIf="!formulario.get('email').valid && formulario.get('email').touched" class="div-form"> - Informe um e-mail válido</span>
+                    <span *ngIf="!formulario.get('ddd').valid && formulario.get('ddd').touched" class="div-form"> - Informe um ddd válido</span>
+                    <span *ngIf="!formulario.get('telefone').valid && formulario.get('telefone').touched" class="div-form"> - Informe um telefone válido</span>
+                    <span *ngIf="!formulario.get('duvidas').valid && formulario.get('duvidas').touched" class="div-form"> - Informe tipo de dúvida</span>
+                    <span *ngIf="!formulario.get('txtduvidas').valid && formulario.get('txtduvidas').touched" class="div-form"> - Informe a dúvida</span>
+                </div>       
+                <input type="text" class="nome"
+                placeholder="Nome"
+                formControlName="nome">
+                
+                <input type="text" class="email"
+                placeholder="E-mail"
+                formControlName="email">
+
+                <input type="text" class="ddd"
+                placeholder="DDD"
+                formControlName="ddd"
+                maxlength="2">
+                
+                <input type="text" class="telefone"
+                placeholder="Telefone"
+                formControlName="telefone"
+                [textMask]="{mask: maskTelefone}">  
+                
+                <select name="" id="" class="duvidas"
+                formControlName="duvidas">
+                    <option value="">Estou com dúvidas</option>
+                    <option value="1">Fundos de Investimento</option>    
+                    <option value="2">Renda Fixa</option>            
+                </select>      
+                
+                <textarea name="" id="" cols="30" rows="19" class="text-duvidas"
+                formControlName="txtduvidas"></textarea>                
+                <button class="enviar" [disabled]="!formulario.valid" (click)="enviarContato($event)">ENVIAR</button>
+            </form>
         </div>
     </div>
     <div class="contact-location">

@@ -16,18 +16,6 @@ export class PartialSvc {
     plan: Array<Plano.IPlano>;
     plataformaSelecionada: string;
     
-    //Máscaras
-    public maskTelefone = ['(', /[0-9]/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
-    public maskCpf = [ /[0-9]/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '.',  /\d/, /\d/, /\d/, '-', /\d/, /\d/];
-    public maskNascimento = [ /[0-9]/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/];
-    
-    public formulario: FormGroup = new FormGroup({
-        'nome': new FormControl(null,[ Validators.required,Validators.minLength(5),Validators.maxLength(150)]),
-        'email': new FormControl(null,[ Validators.required,Validators.minLength(5),Validators.maxLength(150)]),    
-        'cpf': new FormControl(null,[ Validators.required,Validators.minLength(11),Validators.maxLength(150)]),
-        'nascimento': new FormControl(null, [ Validators.required,Validators.minLength(10),Validators.maxLength(150)]),        
-        'telefone': new FormControl(null, [ Validators.required,Validators.minLength(7),Validators.maxLength(150)])
-    });
       
     constructor (
         private _plataformaService: PlataformaService,

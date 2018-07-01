@@ -1,15 +1,73 @@
 //Importando scss globais
 @import '../sass/_menu'
+html,body
+    width: 100%;
+    height: 100%
 .carousel
     margin: 500px auto
 .banner-content
-    background: url(/assets/imgs/banner1.png)
     width: 100%
     margin: 0 auto
-    height: 808px
+    height: 100vh
     position: relative
+.content-anl
+    background: url(/assets/imgs/banner1.png)
     background-size: cover
     background-position: center
+.content-mkt
+    background: url(/assets/imgs/banner2.png) 
+    background-size: cover
+    background-position: center
+.content-mult
+    background: url(/assets/imgs/banner3.png) 
+    background-size: cover
+    background-position: center
+.content-btn-img
+    bottom: 0
+    position: absolute
+    width: 100%
+    background-color: rgba(92, 88, 88, 0.35)
+    span
+        position: absolute
+        bottom: 44vh
+        color: #fff
+        font-size: 30px
+        width: 24%
+        left: 650px
+        letter-spacing: 2px
+        display: none
+    .text-img-anl
+        left: 350px
+        display: block
+    .text-img-mkt
+        left: 350px
+        display: none
+    .btns
+        width: 90%
+        margin: 0 auto
+        text-align: center
+    .btn-img
+        color: $color-wh
+        font-weight: 100
+        font-size: 16px
+        width: 20%
+        padding: 0px
+        text-transform: uppercase
+        display: inline-table
+        height: 50px
+        margin: 0px auto
+        cursor: pointer
+        background-color: rgba(121, 121, 121, 0.5686274509803921)
+        padding-bottom: 10px
+        position: relative
+        top: -30px
+        border-radius: 5px;
+    .active
+        color: $color-wh
+        background-color: $color-btn-img
+        padding-bottom: 10px
+        position: relative;
+        top: -30px;
 .who
     background-color: #EEEEEE
     height: auto
@@ -74,6 +132,23 @@
 
 //SmartPhones
 @media #{$mq-mobile-min} and #{$mq-mobile-max}    
+    .content-btn-img
+        .text-img-mkt
+            left: 7%
+            font-size: 17px
+            width: 90%
+        .text-img-anl
+            left: 7%
+            font-size: 17px
+            width: 90%
+        .text-img-mult
+            left: 7%
+            font-size: 17px
+            width: 90%
+    .btn-img
+        font-size: 10px !important
+        width: 30% !important
+        height: 35px !important
     .who-content
          h1
             font-size: 40px !important
@@ -84,6 +159,22 @@
             padding: 30px
 //Tablets
 @media #{$mq-tablet-min} and #{$mq-tablet-max}    
+    .content-btn-img
+        .text-img-mkt
+            left: 7%
+            font-size: 20   px
+            width: 90%
+        .text-img-anl
+            left: 7%
+            font-size: 20px
+            width: 90%
+        .text-img-mult
+            left: 7%
+            font-size: 20px
+            width: 90%
+    .btn-img
+        font-size: 12px !important
+        width: 25% !important
     .cols-who
         width: 48% !important
         padding: 0px !important

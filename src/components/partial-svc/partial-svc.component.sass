@@ -20,25 +20,72 @@
         margin: 0 auto
         padding: 0px 0 50px 0px
         text-align: center
-        .svc-content-grid-img-pregao
+        .svc-content-grid-img-1
+            .svc-description-1
+                @include mq-svc-description-body()
+                opacity: 0
+            &:hover
+                .svc-description-1
+                    @include mq-svc-description-body()
+                    opacity: 1
+                .footer-title-1
+                    opacity: 0
             @include mq-svc-content-grid-img('/assets/imgs/svc/services_pregao.png')
-        .svc-content-grid-img-plataformas
+        .svc-content-grid-img-2
+            .svc-description-2
+                @include mq-svc-description-body()
+                opacity: 0
+            &:hover
+                .svc-description-2
+                    @include mq-svc-description-body()
+                    opacity: 1
+                .footer-title-2
+                    opacity: 0
             @include mq-svc-content-grid-img('/assets/imgs/svc/services_plataformas.png')
-        .svc-content-grid-img-mercado
+        .svc-content-grid-img-3
+            .svc-description-3
+                @include mq-svc-description-body()
+                opacity: 0
+            &:hover
+                .svc-description-3
+                    @include mq-svc-description-body()
+                    opacity: 1
+                .footer-title-3
+                    opacity: 0
             @include mq-svc-content-grid-img('/assets/imgs/svc/services_mercado.png')
-        .svc-content-grid-img-carteira
+        .svc-content-grid-img-4
+            .svc-description-4
+                @include mq-svc-description-body()
+                opacity: 0
+            &:hover
+                .svc-description-4
+                    @include mq-svc-description-body()
+                    opacity: 1
+                .footer-title-4
+                    opacity: 0
             @include mq-svc-content-grid-img('/assets/imgs/svc/services_carteira.png')
+        
 //SmartPhones
 @media #{$mq-mobile-min} and #{$mq-mobile-max}
     .svc-content-grid  
         width: 100% !important
-        .svc-content-grid-img-pregao
+        .svc-content-grid-img-1
             width: 100% !important
-        .svc-content-grid-img-plataformas
+        .svc-content-grid-img-2
             width: 100% !important
-        .svc-content-grid-img-mercado
+        .svc-content-grid-img-3
             width: 100% !important
-        .svc-content-grid-img-carteira
+        .svc-content-grid-img-4
             width: 100% !important
 //Tablets
-@media #{$mq-tablet-min} and #{$mq-tablet-max}    
+@media #{$mq-tablet-min} and #{$mq-tablet-max}  
+    .svc-content-grid  
+        width: 100% !important
+        .svc-content-grid-img-1
+            width: 70% !important
+        .svc-content-grid-img-2
+            width: 70% !important
+        .svc-content-grid-img-3
+            width: 70% !important
+        .svc-content-grid-img-4
+            width: 70% !important  

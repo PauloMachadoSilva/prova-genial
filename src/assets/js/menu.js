@@ -141,8 +141,7 @@
     });
     $('.up').click(function() {
       window.scrollTo(0, 0);  
-    });
-    
+    });    
   
   })(jQuery); // End of use strict
   

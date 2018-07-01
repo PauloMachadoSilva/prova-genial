@@ -58,6 +58,37 @@
     width: 100%
     margin: 0 auto
     position: relative
+@mixin mq-svc-footer-title-body()
+    color: $color-wh
+    position: absolute
+    bottom: 0
+    text-align: center
+    left: 0%
+    background-color: rgba(92, 88, 88, 0.55)
+    width: 100%
+    text-transform: uppercase
+    p
+        line-height: 50px
+@mixin mq-svc-description-body()
+    background-color: rgba(81, 74, 73, 0.75)
+    height: 252px
+    h2
+        color: $color-wh
+        text-transform: uppercase
+        font-weight: 100
+        margin: 0 auto
+        position: relative
+        padding-top: 50px
+        font-size: 20px
+    p
+        position: relative
+        font-size: 15px
+        margin: 0 auto
+        text-align: center
+        padding: 40px
+        color: $color-br
+        font-weight: 100
+        display: inline-table
 @mixin mq-svc-content-grid-img($link)
     background-image: url($link)
     background-position: center
@@ -67,13 +98,13 @@
     margin: 0 auto
     position: relative
     display: inline-block
-    .footer-title
-        color: $color-wh
-        position: absolute
-        bottom: 0
-        text-align: center
-        left: 0%
-        background-color: rgba(92, 88, 88, 0.55)
-        width: 100%
-        p
-            line-height: 50px
+    margin-right: 10px
+    margin-bottom: 10px
+    .footer-title-1
+        @include mq-svc-footer-title-body()
+    .footer-title-2
+        @include mq-svc-footer-title-body()
+    .footer-title-3
+        @include mq-svc-footer-title-body()
+    .footer-title-4
+        @include mq-svc-footer-title-body()

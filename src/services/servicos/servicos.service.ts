@@ -13,11 +13,10 @@ export class ServicosService {
     }
 
     /**
-     * Consultando Planos
+     * Consultando Servicos na UMBLER, retornando JSON Ge
      * @author Paulo Eduardo - pauloems@yahoo.com.br
      */
     consultaServicos(): Observable<any> {
-        //plano = sku
         return this
             ._httpClient
             .get(`http://fideliu.com.br/v1/genial/servicos/consultar`)

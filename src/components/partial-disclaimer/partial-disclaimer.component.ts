@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
-
 
 @Component({
     selector: 'partial-disclaimer',
@@ -9,6 +7,5 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 
 export class PartialDisclaimer{
-   
     
 }

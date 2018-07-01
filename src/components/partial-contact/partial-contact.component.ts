@@ -11,7 +11,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class PartialContact {
 
     //Máscaras
-    public maskTelefone = ['(', /[0-9]/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
+    public maskTelefone = [ /\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
     public maskCpf = [ /[0-9]/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '.',  /\d/, /\d/, /\d/, '-', /\d/, /\d/];
     public maskNascimento = [ /[0-9]/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/];
     
@@ -33,8 +33,6 @@ export class PartialContact {
             this.formulario.get('ddd').markAsTouched()
             this.formulario.get('telefone').markAsTouched()
             this.formulario.get('txtduvidas').markAsTouched()
-            
-            
         }
         else {
             //Criando objeto a ser exibido no console
@@ -48,7 +46,6 @@ export class PartialContact {
             }]
             alert('O objeto foi escrito no Console')
             console.log(resultado);
-        }
-            
+        }   
         }  
 }

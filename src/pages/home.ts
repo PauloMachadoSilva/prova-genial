@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { Plataforma } from '../models/plataformas/plataforma.models';
-import { Plano } from '../models/planos/plano.models';
 
 @Component({
     selector: 'page-home',
@@ -10,7 +7,6 @@ import { Plano } from '../models/planos/plano.models';
 })
 
 export class PageHome {
-   
     
 }
 
